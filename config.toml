@@ -52,6 +52,13 @@ icon = "/icons/facebook.svg"
 name = "facebook"
 url = "https://www.facebook.com/matthew.mong99"
 
+[[params.social]]
+alt = "spotify icon"
+blank = true
+icon = "/icons/spotify.svg"
+name = "spotify"
+url = "https://open.spotify.com/user/matt12831"
+
 # Navigation bar
 [menu]
 
@@ -93,22 +100,3 @@ languageCode = 'en'
 languageName = 'English'
 weight = 0
 
-[languages.fr]
-contentDir = 'content/fr'
-languageCode = 'fr'
-languageName = 'Français'
-weight = 2
-
-# Uncomment the following lines to add an italian translation.
-# [languages.it]
-# contentDir = 'content/it'
-# languageCode = 'it'
-# languageName = 'Italiano'
-# weight = 3
-
-# Uncomment the following lines to add an spanish translation.
-# [languages.es]
-# contentDir = 'content/es'
-# languageCode = 'es'
-# languageName = 'Español'
-# weight = 4

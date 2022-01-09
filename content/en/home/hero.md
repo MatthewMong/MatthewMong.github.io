@@ -28,4 +28,3 @@ hero_media = "/img/portrait.jpg"
 # Hi, I'm **Matthew**
 
 I'm a **Biomedical Engineering Student** at the **University of British Columbia** who's interested in **Engineering**, **Medicine**, and **Music**
-
