@@ -22,7 +22,7 @@ customJS = ["js/console.js"] # Path relative to assets folder
 # For blog page description you can overwrite it 
 # in the front matter
 description = "Boilerplate website"
-email = "mail@example.com"
+email = "matthew.mong1999@gmail.com"
 favicon = '/favicon.ico'
 # Dark mode support
 # Supported value are :
