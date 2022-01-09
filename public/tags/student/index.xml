@@ -1,1 +1,20 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>student on Matthew Mong</title><link>https://matthewmong.github.io/tags/student/</link><description>Recent content in student on Matthew Mong</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Thu, 25 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://matthewmong.github.io/tags/student/index.xml" rel="self" type="application/rss+xml"/><item><title>BME Student Society</title><link>https://matthewmong.github.io/blog/society/</link><pubDate>Thu, 25 Jun 2020 00:00:00 +0000</pubDate><guid>https://matthewmong.github.io/blog/society/</guid><description>What I Did I&amp;rsquo;ve served as president, industry liason, and social coordinator across 3 years. Website</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>student on Matthew Mong</title>
+    <link>https://matthewmong.github.io/tags/student/</link>
+    <description>Recent content in student on Matthew Mong</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 25 Jun 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://matthewmong.github.io/tags/student/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>BME Student Society</title>
+      <link>https://matthewmong.github.io/blog/society/</link>
+      <pubDate>Thu, 25 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://matthewmong.github.io/blog/society/</guid>
+      <description>What I Did I&amp;rsquo;ve served as president, industry liason, and social coordinator across 3 years. Website</description>
+    </item>
+    
+  </channel>
+</rss>
