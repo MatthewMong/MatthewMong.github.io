@@ -10,7 +10,7 @@ paginate = 10
 theme = 'pico'
 # Title of the website is used for the meta tag title
 # and the square icon (not the favicon)
-title = 'Pico'
+title = 'Matthew Mong'
 
 [params]
 customCSS = [
@@ -36,42 +36,21 @@ favicon = '/favicon.ico'
 alt = "email icon"
 icon = "/icons/email.svg"
 name = "email"
-url = "mailto:mail@example.com"
+url = "mailto:matthew.mong1999@gmail.com"
 
 [[params.social]]
 alt = "github icon"
 blank = true
 icon = "/icons/github.svg"
 name = "github"
-url = "https://github.com/"
-
-[[params.social]]
-alt = "medium icon"
-blank = true
-icon = "/icons/medium.svg"
-name = "medium"
-url = "https://medium.com/"
-
-[[params.social]]
-alt = "stack-overflow icon"
-blank = true
-icon = "/icons/stack-overflow.svg"
-name = "stack-overflow"
-url = "https://stackoverflow.com/"
-
-[[params.social]]
-alt = "twitter icon"
-blank = true
-icon = "/icons/twitter.svg"
-name = "twitter"
-url = "https://twitter.com/"
+url = "https://github.com/MatthewMong"
 
 [[params.social]]
 alt = "facebook icon"
 blank = true
 icon = "/icons/facebook.svg"
 name = "facebook"
-url = "https://facebook.com/"
+url = "https://www.facebook.com/matthew.mong99"
 
 # Navigation bar
 [menu]
