@@ -55,5 +55,5 @@ required = true
 
 +++
 
-Have a question ?
-Let’s talk about it !
+Have a question?
+Let’s talk about it!

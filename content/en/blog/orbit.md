@@ -1,14 +1,15 @@
 +++
-title = "Krabby Patty recipe"
-subtitle = "How the best burger of all time is made."
-tags = ['recipe']
+title = "UBC Orbit"
+subtitle = "Making a CubeSat"
+tags = ['design team', 'space']
+type = "post"
 date = 2020-06-25
 
 # For description meta tag
-description = "Recipe of the legendary Krabby Patty."
+description = "My time at UBC Orbit and what I did"
 
 # Comment next line and the default banner wil be used.
-banner = 'img/krabby_patty.webp'
+banner = 'img/orbit.webp'
 
 +++
 
@@ -48,4 +49,3 @@ For the sauce:
 - Place the crab pâté steaks on each burger bun, then add a salad leaf, a few tomato slices, onions and pickles.
 
 - Add the sauce and cover with burger bread before tasting these delicious Krabby Krab!
-
