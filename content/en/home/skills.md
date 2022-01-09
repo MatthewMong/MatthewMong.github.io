@@ -7,28 +7,33 @@ weight = 20  # Order that this section will appear.
 # hidden = true
 
 title = "Skills"
-subtitle = "I am really good at the following technical skills"
+subtitle = "Some things I have experience in"
 
 [[bar]]
-	icon = "/icons/precision.svg"
-	name = "Precision"
-	percent = "95%"
+	icon = "/icons/frontend.svg"
+	name = "Front End Software Development"
+	percent = "85%"
 
 [[bar]]
-	icon = "/icons/heat.svg"
-	name = "Heat Control"
-	percent = "90%"
-
-
-[[bar]]
-	icon = "/icons/chicken.svg"
-	name = "Quality of Food"
-	percent = "87%"
+	icon = "/icons/backend.svg"
+	name = "Back End Software Development"
+	percent = "65%"
 
 
 [[bar]]
-	icon = "/icons/presentation.svg"
-	name = "Presentation"
-	percent = "75%"
+	icon = "/icons/cad.svg"
+	name = "Computer Aided Design and 3D Printing"
+	percent = "70%"
+
+
+[[bar]]
+	icon = "/icons/ski.svg"
+	name = "Skiing"
+	percent = "80%"
+
+[[bar]]
+	icon = "/icons/piano.svg"
+	name = "Being a One Man Band"
+	percent = "50%"
 
 +++
