@@ -9,10 +9,13 @@ date = 2020-06-25
 description = "Positions I've held in the biomedical engineering student society"
 
 # Comment next line and the default banner wil be used.
-banner = 'img/society.png'
+banner = 'img/society.webp'
 
 +++
 
 ## What I Did
-I've served as president, industry liason, and social coordinator across 3 years.
-[Website](https://www.ubcbiomed.com/)
+- Currently I am serving as president.
+- I've served as president, industry liason, and social coordinator across 4 years.
+- Responsible for creation of student space on UBC campus
+- Started annual Industry Night Event, which hosts over 25 companies and 200 students
+- [Website](https://www.ubcbiomed.com/)

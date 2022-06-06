@@ -14,5 +14,7 @@ banner = 'img/orbit.webp'
 +++
 
 ## What I Did
-Design an VIS-NIR imaging payload package for a cubesat with a spectral resolution of 53 meters. 
-[Website](https://www.ubcorbit.com/)
+- Design an VIS-NIR imaging payload package for a cubesat with a spectral resolution of 53 meters. 
+- Work with Altium software
+- Coordinate with multiple other teams to create viable power and size parameters to comply with cubesat limits
+- [Website](https://www.ubcorbit.com/)

@@ -18,7 +18,7 @@ date_format = "Jan 2006" # Date format https://gohugo.io/functions/dateformat/#r
   location = "Vancouver, BC"
   date_start = "2021-05-01"
   date_end = ""
-  description = "Built a React app to schedule large workforces and analyze sleep data. Built a Ruby on Rails backend which analyzes sleep data and stores key parameters in a MySQL database."
+  description = "Contributed to a React app to schedule large workforces and analyze sleep data. Contributed to a Ruby on Rails backend which analyzes sleep data and stores key parameters in a MySQL database. Shipped multiple features to production."
 
 [[period]]
   title = "Research & Development Engineer"
@@ -26,7 +26,7 @@ date_format = "Jan 2006" # Date format https://gohugo.io/functions/dateformat/#r
   location = "Vancouver, BC"
   date_start = "2020-08-01"
   date_end = "2021-04-01"
-  description = "Developed a Java desktop application to preplan facial reconstructive surgery. Developed and manufactured 3D printed osteotomy guides for intraoperative use."
+  description = "Developed a Java desktop application to preplan facial reconstructive surgery. Developed and manufactured 3D printed osteotomy guides for intraoperative use. Planned individual patient cases and tested devices in the OR."
   
 [[period]]
   title = "Software Developer"
