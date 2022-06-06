@@ -7,23 +7,23 @@ weight = 20  # Order that this section will appear.
 # hidden = true
 
 title = "Skills"
-subtitle = "Some things I have experience in"
+subtitle = "Skills I'm working on developing"
 
 [[bar]]
 	icon = "/icons/frontend.svg"
 	name = "Front End Software Development"
-	percent = "60%"
+	percent = "80%"
 
 [[bar]]
 	icon = "/icons/backend.svg"
 	name = "Back End Software Development"
-	percent = "30%"
+	percent = "50%"
 
 
 [[bar]]
 	icon = "/icons/cad.svg"
 	name = "Computer Aided Design and 3D Printing"
-	percent = "10%"
+	percent = "20%"
 
 
 [[bar]]
