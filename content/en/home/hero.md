@@ -7,7 +7,7 @@ weight = 10
 # hidden = true
 
 # Hero image (optional). Enter filename of an image in the `static/` folder.
-hero_media = "/img/myportrait.jpg"
+hero_media = "/img/myportrait.webp"
 
 # Buttons
 # Add as much button as you want

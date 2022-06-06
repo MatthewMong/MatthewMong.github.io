@@ -12,28 +12,28 @@ subtitle = "Some things I have experience in"
 [[bar]]
 	icon = "/icons/frontend.svg"
 	name = "Front End Software Development"
-	percent = "85%"
+	percent = "60%"
 
 [[bar]]
 	icon = "/icons/backend.svg"
 	name = "Back End Software Development"
-	percent = "65%"
+	percent = "30%"
 
 
 [[bar]]
 	icon = "/icons/cad.svg"
 	name = "Computer Aided Design and 3D Printing"
-	percent = "70%"
+	percent = "10%"
 
 
 [[bar]]
 	icon = "/icons/ski.svg"
 	name = "Skiing"
-	percent = "80%"
+	percent = "70%"
 
 [[bar]]
 	icon = "/icons/piano.svg"
 	name = "Being a One Man Band"
-	percent = "50%"
+	percent = "30%"
 
 +++
