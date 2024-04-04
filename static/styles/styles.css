@@ -1,0 +1,32 @@
+:root {
+    --primary: #fcf4d9;
+    --secondary: #8ed2c9;
+    --tertiary: #00aaa0;
+    --quaternary: #d55b3e;
+}
+
+:global(body) {
+    background: var(--primary);
+    font-family: Ubuntu;
+}
+
+:global(h1) {
+    color: var(--tertiary);
+}
+
+:global(h2) {
+    color: var(--tertiary);
+}
+
+:global(.primaryColor) { 
+	background: var(--primary); 
+}
+
+:global(.secondaryColor) { 
+	background: var(--secondary); }
+
+:global(.tertiaryColor) { 
+	background: var(--tertiary); }
+
+:global(.quaternaryColor) { 
+	background: var(--quaternary); }
