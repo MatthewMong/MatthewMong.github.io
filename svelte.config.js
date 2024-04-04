@@ -15,7 +15,6 @@ const config = {
 			fallback: '404.html',
 			pages: 'build',
 			assets: 'build',
-			fallback: undefined,
 			precompress: false,
 			strict: true
 		}),
