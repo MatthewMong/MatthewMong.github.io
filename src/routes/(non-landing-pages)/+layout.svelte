@@ -1,5 +1,3 @@
-<h1>Hi</h1>
 <div class="hiText">
     <h1>I'm Matthew</h1>
 </div>
-<h1>I make stuff</h1>
