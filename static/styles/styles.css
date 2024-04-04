@@ -5,21 +5,45 @@
     --quaternary: #d55b3e;
 }
 
+/* Standard HTML Tags */
 :global(body) {
     background: var(--primary);
     font-family: Ubuntu;
+    background-image: url( '/images/mountain.svg' );
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 :global(h1) {
     color: var(--tertiary);
+    font-size: 6vw;
 }
 
 :global(h2) {
     color: var(--tertiary);
 }
 
+/* Custom Class Tags */
+:global(.hiText) {
+    view-transition-name: hi-text;
+}
+
+:global(.navOption) {
+    text-decoration: none;
+    color: var(--tertiary);
+    font-size: 3vw;
+}
+
+:global(.navOption:hover) {
+    color: var(--secondary);
+}
+
+:global(.navOption:active) {
+    color: var(--quaternary);
+}
+
 :global(.primaryColor) { 
-	background: var(--primary); 
+	background: var(--secondary);
 }
 
 :global(.secondaryColor) { 

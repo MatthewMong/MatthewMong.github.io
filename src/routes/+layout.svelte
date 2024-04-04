@@ -1,11 +1,25 @@
 <style>
-    @import '../../static/styles/styles.css';
-    @import '../../static/fonts/fonts.css';
+    @import '/styles/styles.css';
+    @import '/fonts/fonts.css';
 </style>
+<script>
+    import { onNavigate } from '$app/navigation';
+
+    onNavigate((navigation) => {
+        if (!document.startViewTransition) return;
+
+        return new Promise((resolve) => {
+            document.startViewTransition(async () => {
+                resolve();
+                await navigation.complete;
+            });
+        });
+    });
+</script>
 
 <nav>
-	<a href="/">Home</a>
-	<a href="/about">About</a>
+	<a class="navOption" href="/">Home</a>
+	<a class="navOption" href="/about">About</a>
 </nav>
 
 <slot></slot>
