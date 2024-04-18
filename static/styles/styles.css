@@ -7,8 +7,7 @@
 
 /* Standard HTML Tags */
 :global(body) {
-    background: var(--primary);
-    font-family: Ubuntu;
+    font-family: Poppins;
     background-image: url( '/images/mountain.svg' );
     background-position: center;
     background-repeat: no-repeat;
@@ -18,17 +17,42 @@
 }
 
 :global(h1) {
-    color: var(--tertiary);
-    font-size: 6vw;
+    color: var(--secondary);
+    font-size: 6vh;
 }
 
 :global(h2) {
     color: var(--tertiary);
+    font-size: 3vh;
+}
+
+:global(h4) {
+    color: var(--quaternary);
+    font-size: 1.5vh;
 }
 
 /* Custom Class Tags */
-:global(.hiText) {
-    view-transition-name: hi-text;
+:global(.mdtext) {
+    view-transition-name: medical-device-developer;
+}
+
+:global(.critsoftwaretext) {
+    view-transition-name: critical-software-text;
+}
+
+:global(.blurb) {
+    text-align: center;
+    padding-right: 8vh;
+    padding-left: 8vh;
+    font-size: 2vh;
+}
+
+:global(.left-text) {
+    text-align: left;
+}
+
+:global(.right-text) {
+    text-align: right;
 }
 
 :global(.centered) {
@@ -36,10 +60,16 @@
     justify-content:center;
 }
 
+:global(.navWrapper) {
+    display: flex;
+    padding: 2vh;
+    justify-content: space-evenly;
+}
+
 :global(.navOption) {
     text-decoration: none;
     color: var(--tertiary);
-    font-size: 3vw;
+    font-size: 2vh;
 }
 
 :global(.navOption:hover) {
