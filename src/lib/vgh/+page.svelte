@@ -1,5 +1,5 @@
-<div class="primaryColor wrapper">
-    <div class="imageBackground">
+<div class="wrapper">
+    <div class="imageBackground primaryColor">
         <img class="image" src="images/recon.png" alt="">
     </div>
     <div class="text">
