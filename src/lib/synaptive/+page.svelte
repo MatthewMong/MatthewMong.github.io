@@ -1,4 +1,4 @@
-<div class="secondaryColor wrapper">
+<div class="primaryColor wrapper">
     <div class="imageBackground">
         <img class="image" src="images/mri.png" alt="">
     </div>
