@@ -37,8 +37,8 @@
 }
 
 :global(.imageBackground) {
-    height: 20vh;
     width: 20vw;
+    padding: 2vh;
     display: flex;
     justify-content: center;
 }
