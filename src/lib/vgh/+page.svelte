@@ -1,6 +1,6 @@
 <div class="wrapper">
     <div class="imageBackground primaryColor">
-        <img class="image" src="images/recon.png" alt="">
+        <img class="image" src="images/vgh.svg" alt="">
     </div>
     <div class="text">
         <h4>
