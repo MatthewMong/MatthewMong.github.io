@@ -36,6 +36,26 @@
     view-transition-name: critical-software-text;
 }
 
+:global(.imageBackground) {
+    height: 20vh;
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+}
+
+:global(.image) {
+    width: 18vw;
+    display: flex;
+    justify-content: center;
+}
+
+:global(.wrapper) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
 :global(.blurb) {
     text-align: center;
     padding-right: 8vh;

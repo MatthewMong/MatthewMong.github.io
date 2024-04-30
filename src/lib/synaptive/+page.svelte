@@ -7,27 +7,10 @@
             Synaptive Medical
         </h4>
         <p>
-            Currently designing 
+            From firmware all the way to technician interfaces and patient identification algorithms,
+            I'm currently designing 
             <span class="critsoftwaretext">critical software</span> 
-            for <a href="https://www.synaptivemedical.com/products/mri/">next generation MRI</a>
+            for <a href="https://www.synaptivemedical.com/products/mri/">next generation MRI</a>. 
         </p>
     </div>
 </div>
-
-<style>
-    .imageBackground {
-        height: 20vh;
-        display: flex;
-        justify-content: center;
-    }
-
-    .image {
-        height: 20vh;
-        display: flex;
-        justify-content: center;
-    }
-
-    .wrapper {
-        padding: 2vh;
-    }
-</style>
