@@ -26,6 +26,5 @@
 
     .item-wrapper {
         padding: 2vw;
-        width: 40vw;
     }
 </style>
