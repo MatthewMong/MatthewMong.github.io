@@ -1,6 +1,6 @@
 <div class="wrapper">
     <div class="imageBackground primaryColor">
-        <img class="image" src="images/mri.png" alt="">
+        <img class="image" src="images/skiing.webp" alt="">
     </div>
     <div class="text">
         <h4>
