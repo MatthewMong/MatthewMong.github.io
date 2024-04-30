@@ -26,5 +26,6 @@
 
     .item-wrapper {
         padding: 2vw;
+        text-align: center;
     }
 </style>
