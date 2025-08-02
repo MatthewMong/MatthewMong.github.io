@@ -1,0 +1,244 @@
+:root {
+    --background-color: #1a1a2e;
+    --primary-color: #16213e;
+    --accent-color: #0f3460;
+    --font-color: #e94560;
+    --text-color: #dcdcdc;
+    --border-shadow: 4px 4px 0px var(--accent-color);
+    --font-family-pixel: 'Press Start 2P', cursive;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+#particle-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 1rem 2rem;
+    text-align: center;
+    border-bottom: 4px solid var(--accent-color);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    font-family: var(--font-family-pixel);
+    color: var(--font-color);
+    text-decoration: none;
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    background-color: var(--font-color);
+    color: var(--primary-color);
+}
+
+main {
+    padding: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    color: var(--accent-color);
+}
+
+.card {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 4px solid var(--accent-color);
+    border-radius: 8px;
+    box-shadow: 6px 6px 0px var(--accent-color);
+}
+
+.card h1,
+.card h2,
+.card h3 {
+    font-family: var(--font-family-pixel);
+    color: var(--font-color);
+    margin-bottom: 1rem;
+}
+
+.card a {
+    color: var(--font-color);
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+h3 {
+    font-size: 1.1rem;
+}
+
+.contact-info {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+}
+
+.job {
+    margin-bottom: 2rem;
+}
+
+.card ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.card ul li {
+    margin-bottom: 0.5rem;
+    padding-left: 1.2em;
+    position: relative;
+}
+
+.card ul li::before {
+    content: '»';
+    position: absolute;
+    left: 0;
+    color: var(--font-color);
+}
+
+.skills .skill-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.skills .skill-list li::before {
+    content: none;
+}
+
+.hobby-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.hobby-item {
+    background: var(--accent-color);
+    color: var(--text-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+}
+
+.hidden-section {
+    display: none;
+}
+
+.active-section {
+    display: block;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --- Pokémon Command Menu Styles --- */
+.command-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+    font-family: var(--font-family-pixel);
+    font-size: 0.9rem;
+}
+
+.command-menu li {
+    background-color: var(--accent-color);
+    border: 4px solid #000;
+    border-radius: 12px;
+    padding: 1.25rem 1rem;
+    text-align: center;
+    color: #f0f0f0;
+}
+
+/* --- Command Colors --- */
+.command-fight {
+    color: #ff7868;
+    /* Lighter Red for FIGHT */
+}
+
+.command-bag {
+    color: #c8a888;
+    /* Lighter Brown for BAG */
+}
+
+.command-pokemon {
+    color: #88d878;
+    /* Lighter Green for POKEMON */
+}
+
+.command-run {
+    color: #80b8f8;
+    /* Lighter Blue for RUN */
+}
+
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .contact-info {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+}
