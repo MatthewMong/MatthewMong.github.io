@@ -3,10 +3,9 @@
   "version": "1.0.0",
   "description": "Matthew Mong's personal website.",
   "scripts": {
-    "build": "tsc && copyfiles -u 1 src/*.html src/*.css dist"
+    "build": "tsc"
   },
   "devDependencies": {
-    "copyfiles": "^2.4.1",
     "typescript": "^5.0.0"
   }
 }
