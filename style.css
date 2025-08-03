@@ -24,16 +24,23 @@
 
     /* --- Command Colors for Light Mode --- */
     .command-fight {
-        color: #d95757; /* Stronger Terracotta Red */
+        color: #d95757;
+        /* Stronger Terracotta Red */
     }
+
     .command-bag {
-        color: #9a7b5f; /* Medium Brown */
+        color: #9a7b5f;
+        /* Medium Brown */
     }
+
     .command-pokemon {
-        color: #5a9e62; /* Muted Forest Green */
+        color: #5a9e62;
+        /* Muted Forest Green */
     }
+
     .command-run {
-        color: #4a7ac7; /* Classic Blue */
+        color: #4a7ac7;
+        /* Classic Blue */
     }
 }
 
@@ -49,7 +56,22 @@ body {
     font-family: sans-serif;
     line-height: 1.6;
     overflow-x: hidden;
+    /* Hide horizontal scrollbar */
 }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
 
 #particle-background {
     position: fixed;
@@ -70,12 +92,30 @@ header {
     z-index: 10;
 }
 
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    /* Use gap for consistent spacing */
+}
+
+#brain-animation {
+    width: 50px;
+    height: 50px;
+    margin: 0;
+    /* Remove margin, gap will handle spacing */
+}
+
 nav a {
     font-family: var(--font-family-pixel);
     color: var(--font-color);
     text-decoration: none;
-    margin: 0 1rem;
+    margin: 0;
+    /* Remove margin, gap will handle spacing */
     padding: 0.5rem 1rem;
+    background-color: transparent;
+    /* Add this to stabilize the layout */
     transition: background-color 0.3s, color 0.3s;
 }
 
@@ -208,18 +248,35 @@ h3 {
     display: block;
 }
 
-#intro, #work, #projects, #hobbies {
+#intro,
+#work,
+#projects,
+#hobbies {
     view-transition-name: main-content;
 }
 
 @keyframes slide-out {
-    from { transform: translateX(0); opacity: 1; }
-    to { transform: translateX(-100%); opacity: 0; }
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
 }
 
 @keyframes slide-in {
-    from { transform: translateX(100%); opacity: 0; }
-    to { transform: translateX(0); opacity: 1; }
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 ::view-transition-old(main-content) {
@@ -253,19 +310,23 @@ h3 {
 
 /* --- Command Colors for Dark Mode --- */
 .command-fight {
-    color: #e67e80; /* Warm Pink/Red */
+    color: #e67e80;
+    /* Warm Pink/Red */
 }
 
 .command-bag {
-    color: #a88a6d; /* Earthy Brown */
+    color: #a88a6d;
+    /* Earthy Brown */
 }
 
 .command-pokemon {
-    color: #82c384; /* Soft Green */
+    color: #82c384;
+    /* Soft Green */
 }
 
 .command-run {
-    color: #7ca4e8; /* Soft Blue */
+    color: #7ca4e8;
+    /* Soft Blue */
 }
 
 
@@ -278,8 +339,12 @@ h3 {
         font-size: 1.2rem;
     }
 
+    #brain-animation {
+        display: none;
+        /* Hide brain on small screens */
+    }
+
     nav {
-        display: flex;
         flex-direction: column;
         gap: 0.5rem;
     }
@@ -290,6 +355,6 @@ h3 {
     }
 
     .contact-info p:not(:first-child)::before {
-       display: none;
+        display: none;
     }
 }

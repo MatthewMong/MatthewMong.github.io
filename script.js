@@ -1,6 +1,6 @@
 "use strict";
 // --- p5.js Sketch ---
-const sketch = (p) => {
+const particleSketch = (p) => {
     let particles = [];
     class Particle {
         pos;
@@ -50,6 +50,58 @@ const sketch = (p) => {
         p.resizeCanvas(p.windowWidth, p.windowHeight);
     };
 };
+const brainSketch = (p) => {
+    let time = 0;
+    p.setup = () => {
+        const brainCanvas = p.createCanvas(50, 50);
+        const brainParent = document.getElementById('brain-animation');
+        if (brainParent) {
+            brainCanvas.parent(brainParent);
+        }
+        p.frameRate(20);
+    };
+    const drawSulcus = (y_start, y_end, y_control) => {
+        const x_start = p.width * 0.48;
+        const x_end = p.width * 0.15 + p.noise(time + y_start) * p.width * 0.2;
+        const x_control1 = p.width * 0.4;
+        const y_control1 = y_start + (y_control - y_start) * 0.5;
+        const x_control2 = x_end + (x_control1 - x_end) * 0.5;
+        const y_control2 = y_control;
+        p.bezier(x_start, y_start, x_control1, y_control1, x_control2, y_control2, x_end, y_end);
+        // Mirror for the right hemisphere
+        p.bezier(p.width - x_start, y_start, p.width - x_control1, y_control1, p.width - x_control2, y_control2, p.width - x_end, y_end);
+    };
+    p.draw = () => {
+        p.clear();
+        p.noFill();
+        const style = getComputedStyle(document.documentElement);
+        const fontColor = style.getPropertyValue('--font-color').trim();
+        p.stroke(fontColor);
+        p.strokeWeight(2);
+        // Left Hemisphere Outline
+        p.beginShape();
+        p.curveVertex(p.width * 0.5, p.height * 0.95); // Bottom center
+        p.curveVertex(p.width * 0.1, p.height * 0.6); // Left mid
+        p.curveVertex(p.width * 0.2, p.height * 0.2); // Left top bump
+        p.curveVertex(p.width * 0.4, p.height * 0.15); // Top center bump
+        p.curveVertex(p.width * 0.5, p.height * 0.2); // Top center dip
+        p.endShape();
+        // Right Hemisphere Outline
+        p.beginShape();
+        p.curveVertex(p.width * 0.5, p.height * 0.95); // Bottom center
+        p.curveVertex(p.width * 0.9, p.height * 0.6); // Right mid
+        p.curveVertex(p.width * 0.8, p.height * 0.2); // Right top bump
+        p.curveVertex(p.width * 0.6, p.height * 0.15); // Top center bump
+        p.curveVertex(p.width * 0.5, p.height * 0.2); // Top center dip
+        p.endShape();
+        // Animated Sulci (grooves)
+        p.strokeWeight(1);
+        drawSulcus(p.height * 0.3, p.height * 0.35, p.height * 0.4);
+        drawSulcus(p.height * 0.5, p.height * 0.6, p.height * 0.5);
+        drawSulcus(p.height * 0.7, p.height * 0.8, p.height * 0.6);
+        time += 0.03;
+    };
+};
 // --- Main App Logic & Initialization ---
 function initializeNavigation() {
     const navLinks = document.querySelectorAll('.nav-link');
@@ -93,5 +145,6 @@ function initializeNavigation() {
 }
 document.addEventListener('DOMContentLoaded', () => {
     initializeNavigation();
-    new p5(sketch);
+    new p5(particleSketch);
+    new p5(brainSketch);
 });
