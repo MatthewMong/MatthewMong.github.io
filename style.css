@@ -1,9 +1,9 @@
 :root {
-    --background-color: #1a1a2e;
-    --primary-color: #16213e;
-    --accent-color: #0f3460;
-    --font-color: #e94560;
-    --text-color: #dcdcdc;
+    --background-color: #2c2a4a;
+    --primary-color: #4f4a6d;
+    --accent-color: #7f78a2;
+    --font-color: #ffae57;
+    --text-color: #f5e3e3;
     --border-shadow: 4px 4px 0px var(--accent-color);
     --font-family-pixel: 'Press Start 2P', cursive;
 }
@@ -11,11 +11,11 @@
 /* Light theme using prefers-color-scheme */
 @media (prefers-color-scheme: light) {
     :root {
-        --background-color: #f0f0f0;
+        --background-color: #fdf6e3;
         --primary-color: #ffffff;
-        --accent-color: #e0e0e0;
-        --font-color: #d32f2f;
-        --text-color: #333333;
+        --accent-color: #d3c4a2;
+        --font-color: #c95c3a;
+        --text-color: #5a524c;
     }
 
     .command-menu li {
@@ -24,16 +24,16 @@
 
     /* --- Command Colors for Light Mode --- */
     .command-fight {
-        color: #c62828; /* Darker Red */
+        color: #d95757; /* Stronger Terracotta Red */
     }
     .command-bag {
-        color: #6d4c41; /* Darker Brown */
+        color: #9a7b5f; /* Medium Brown */
     }
     .command-pokemon {
-        color: #2e7d32; /* Darker Green */
+        color: #5a9e62; /* Muted Forest Green */
     }
     .command-run {
-        color: #1565c0; /* Darker Blue */
+        color: #4a7ac7; /* Classic Blue */
     }
 }
 
@@ -135,10 +135,23 @@ h3 {
 
 .contact-info {
     display: flex;
-    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5rem 1rem;
     margin-top: 1rem;
     font-size: 0.9rem;
 }
+
+.contact-info p {
+    position: relative;
+}
+
+.contact-info p:not(:first-child)::before {
+    content: '|';
+    margin-right: 1rem;
+    color: var(--text-color);
+}
+
 
 .job {
     margin-bottom: 2rem;
@@ -238,25 +251,21 @@ h3 {
     color: var(--text-color);
 }
 
-/* --- Command Colors --- */
+/* --- Command Colors for Dark Mode --- */
 .command-fight {
-    color: #ff7868;
-    /* Lighter Red for FIGHT */
+    color: #e67e80; /* Warm Pink/Red */
 }
 
 .command-bag {
-    color: #c8a888;
-    /* Lighter Brown for BAG */
+    color: #a88a6d; /* Earthy Brown */
 }
 
 .command-pokemon {
-    color: #88d878;
-    /* Lighter Green for POKEMON */
+    color: #82c384; /* Soft Green */
 }
 
 .command-run {
-    color: #80b8f8;
-    /* Lighter Blue for RUN */
+    color: #7ca4e8; /* Soft Blue */
 }
 
 
@@ -278,5 +287,9 @@ h3 {
     .contact-info {
         flex-direction: column;
         gap: 0.5rem;
+    }
+
+    .contact-info p:not(:first-child)::before {
+       display: none;
     }
 }
