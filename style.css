@@ -8,6 +8,35 @@
     --font-family-pixel: 'Press Start 2P', cursive;
 }
 
+/* Light theme using prefers-color-scheme */
+@media (prefers-color-scheme: light) {
+    :root {
+        --background-color: #f0f0f0;
+        --primary-color: #ffffff;
+        --accent-color: #e0e0e0;
+        --font-color: #d32f2f;
+        --text-color: #333333;
+    }
+
+    .command-menu li {
+        background-color: var(--background-color);
+    }
+
+    /* --- Command Colors for Light Mode --- */
+    .command-fight {
+        color: #c62828; /* Darker Red */
+    }
+    .command-bag {
+        color: #6d4c41; /* Darker Brown */
+    }
+    .command-pokemon {
+        color: #2e7d32; /* Darker Green */
+    }
+    .command-run {
+        color: #1565c0; /* Darker Blue */
+    }
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -164,19 +193,28 @@ h3 {
 
 .active-section {
     display: block;
-    animation: fadeIn 0.5s ease-in-out;
 }
 
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(10px);
-    }
+#intro, #work, #projects, #hobbies {
+    view-transition-name: main-content;
+}
 
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+@keyframes slide-out {
+    from { transform: translateX(0); opacity: 1; }
+    to { transform: translateX(-100%); opacity: 0; }
+}
+
+@keyframes slide-in {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+::view-transition-old(main-content) {
+    animation: 300ms ease-out both slide-out;
+}
+
+::view-transition-new(main-content) {
+    animation: 300ms ease-out both slide-in;
 }
 
 /* --- Pokémon Command Menu Styles --- */
@@ -197,7 +235,7 @@ h3 {
     border-radius: 12px;
     padding: 1.25rem 1rem;
     text-align: center;
-    color: #f0f0f0;
+    color: var(--text-color);
 }
 
 /* --- Command Colors --- */
