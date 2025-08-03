@@ -78,7 +78,7 @@ function initializeNavigation() {
       });
       updateActiveLink(targetId);
     };
-    
+
     // Using a type assertion because this is an experimental feature
     const documentWithTransition = document as any;
     if (documentWithTransition.startViewTransition) {
